@@ -10,6 +10,7 @@ import (
 
 func TestApp(t *testing.T) {
 	tests := []struct {
+		method        string
 		description   string
 		route         string
 		expectedCode  int
@@ -17,13 +18,15 @@ func TestApp(t *testing.T) {
 		expectedBody  string
 	}{
 		{
+			method:        "POST",
 			description:   "hello route",
-			route:         "/api/",
+			route:         "/public/auth",
 			expectedError: false,
 			expectedCode:  200,
 			expectedBody:  "{\"message\":\"Hello world!\",\"success\":true}",
 		},
 		{
+			method:        "GET",
 			description:   "error 404",
 			route:         "/go-rest",
 			expectedError: false,
@@ -35,7 +38,7 @@ func TestApp(t *testing.T) {
 	app := Setup()
 
 	for _, test := range tests {
-		req := httptest.NewRequest("GET", test.route, nil)
+		req := httptest.NewRequest(test.method, test.route, nil)
 		res, err := app.Test(req, 1)
 
 		assert.Equalf(t, test.expectedError, err != nil, test.description)

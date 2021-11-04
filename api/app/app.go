@@ -7,7 +7,7 @@ import (
 
 func Setup() *fiber.App {
 	app := fiber.New()
-	api := app.Group("/api")
-	routes.HelloRouter(api)
+	api := app.Group("/public")
+	routes.AuthRoute(api)
 	return app
 }
