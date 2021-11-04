@@ -1,4 +1,4 @@
-module github.com/gmvbr/go-rest
+module github.com/gmvbr/go-microservice-auth
 
 go 1.17
 

@@ -1,7 +1,7 @@
 package app
 
 import (
-	"github.com/gmvbr/go-rest/api/routes"
+	"github.com/gmvbr/go-microservice-auth/api/routes"
 	"github.com/gofiber/fiber/v2"
 )
 

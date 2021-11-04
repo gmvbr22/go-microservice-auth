@@ -3,8 +3,9 @@
 package main
 
 import (
-	"github.com/gmvbr/go-rest/api/app"
 	"log"
+
+	"github.com/gmvbr/go-microservice-auth/api/app"
 )
 
 func main() {

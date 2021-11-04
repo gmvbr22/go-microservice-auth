@@ -1,9 +1,9 @@
-# go-rest
+# go-microservice-auth
 
 Sample rest application
 
-[![Go](https://github.com/gmvbr/go-rest/actions/workflows/go.yml/badge.svg)](https://github.com/gmvbr/go-rest/actions/workflows/go.yml)
-[![codecov](https://codecov.io/gh/gmvbr/go-rest/branch/main/graph/badge.svg?token=DfBmi6LXwf)](https://codecov.io/gh/gmvbr/go-rest)
+[![Go](https://github.com/gmvbr/go-microservice-auth/actions/workflows/go.yml/badge.svg)](https://github.com/gmvbr/go-microservice-auth/actions/workflows/go.yml)
+[![codecov](https://codecov.io/gh/gmvbr/go-microservice-auth/branch/main/graph/badge.svg?token=BrranfpinN)](https://codecov.io/gh/gmvbr/go-microservice-auth)
 
 ## Commands
 
