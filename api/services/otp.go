@@ -10,6 +10,6 @@ func CreateOptService() *OptService {
 	return &OptService{}
 }
 
-func (s *OptService) ValidateToken(passcode, secret string) bool {
+func (s *OptService) ValidatePasscode(passcode, secret string) bool {
 	return totp.Validate(passcode, secret)
 }
